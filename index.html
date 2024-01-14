@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>my first page</title>
-    <!-- Latest compiled and minified CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 
     <style>
@@ -23,21 +22,9 @@
             
         }
     </style>
+    <title>Main page</title>
 </head>
-
 <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="navbar-default">
-            <a href="" class="navbar-brand">HOME</a>
-        </div>
-
-        <ul class="nav navbar-nav">
-            <li><a href="">Page one</a></li>
-            <li><a href="">Page tho</a></li>
-            <li><a href="">Page three</a></li>
-        </ul>
-    </nav>
-
 
     <div class="container">
         <div id="fcontainer" class="jumbotron">
@@ -48,42 +35,25 @@
         </div>
     </div>
 
-    <div class="container">
-      <h3 class = "f3" >سلام به همه دوستان لطفا تا وضعیت به حالت عادی برگرده همه از همین کانفیگ های پایین استفاده کنین  </h3>
-      <h3 class = "f3" >لطفا توجه داشته باشین که دو تا کانفیگ گذاشتیم که اولی برا دوستان همراه اولی هست و دومی برا دوستان ایرانسلی  </h3>
-        <h3 class = "f3" >دوستان ایرانسلی به دلیل نداشتن محدودیت همراه اول می تونن مستقیم و با سرعت بالاتر به سرور فنلاند وصل بشن  </h3>
-      <p></p>
-
-      <h1>همراه اولی ها</h1>
-      <div class="contentsTxtBox" >
-        <p id = "h5" >vless://8e8557a0-8f2a-4e50-8714-dcf548d46c2a@newir1.ss22ss.online:30969?type=tcp&security=tls&fp=&alpn=h2%2Chttp%2F1.1#hamrah-j295gq0u</p>
-      </div>
-      <p></p>
-
-
-  
-    </div>
-
+    <div class="container" style="text-align: center">
+        <div style="margin-top: 100px;">
+            <h1 style="text-align: center;">همراه اولی ها</h1>
+            <textarea dir="ltr" style="height: 100px; width: 400px;" id="text1" name="" id="" cols="30" rows="10" value="hello" disabled>vless://8e8557a0-8f2a-4e50-8714-dcf548d46c2a@newir1.ss22ss.online:30969?type=tcp&security=tls&fp=&alpn=h2%2Chttp%2F1.1#hamrah-j295gq0u</textarea>
+            <p></p>
+            <button class="btn btn-primary" id="bt1">برای کپی کلیک کنید</button>
         </div>
-
-    <div class="container">
-      <h1>ایرانسلی ها</h1>
-      <h3 class = "f3" ></h3>
-      <p></p>
-      <div class="contentsTxtBox" >
-        <p id = "h5" >vless://c7ccc037-7fcc-4975-a4ec-4e3c61510d31@germ.ss22ss.online:37698?type=tcp&security=tls&fp=&alpn=h2%2Chttp%2F1.1&sni=ssfardad.zara.com#vless-tcp-irancell</p>
-      </div>
-      <p></p>
-        <p></p>
-        <h3 class = "f3" >ممنون از صبر شما</h3>
         
-
-
-  
+        <div style="margin-top: 100px;">
+            <h1 style="text-align: center;">ایرانسلی ها</h1>
+            <textarea dir="ltr" style="height: 100px; width: 400px;" id="text2" name="" id="" cols="30" rows="10" disabled>vless://c7ccc037-7fcc-4975-a4ec-4e3c61510d31@germ.ss22ss.online:37698?type=tcp&security=tls&fp=&alpn=h2%2Chttp%2F1.1&sni=ssfardad.zara.com#vless-tcp-irancell</textarea>
+            <p></p>
+            <button class="btn btn-primary" id="bt2">برای کپی کلیک کنید</button>
+            <p style="margin-bottom: 100px;"></p>
+        </div>
+        
     </div>
+    
 
-
-
+    <script src="script.js"></script>
 </body>
-
 </html>
