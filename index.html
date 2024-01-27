@@ -35,231 +35,31 @@
         </div>
     </div>
 
-    <div class="container" style="text-align: center">
+<!--     <div class="container" style="text-align: center">
         <div style="margin-top: 100px;">
             <h1 style="text-align: center; color: red; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">سلام به همه دوستان متاسفانه با توجه به اختلالات شدید و مشکلات دیگه ما قادر به ادامه همکاری با شما عزیزان نیستیم و تا 2 روز دیگه همه سرور ها خاموش خواهند شد ، این دو روز سرورهارو روشن نگه میداریم تا دوستان بتونن به راهتی سرویس جایگزینی برای خودشون تهیه کنن. از محبت و صبر همه عزیزان تو این مدت سپاسگذاریم .</h1>
             <h1 style="text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">ایرانسل و همراه اولی ها</h1>
             <h5 style="text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">آپدیت دوشنبه 3 بهمن</h5>
             <h5 style="text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">ساعت : 13:25</h5>
-            <textarea dir="ltr" style="height: 100px; width: 400px;" id="text1" name="" id="" cols="30" rows="10" value="hello" disabled>vless://c9327f1b-be03-487d-99f1-028cfd413ea1@next.ss22ss.online:443?type=tcp&path=%2F&headerType=http&security=none#all-all-73rw3v7x</textarea>
+            <textarea dir="ltr" style="height: 100px; width: 400px;" id="text1" name="" id="" cols="30" rows="10" value="hello" disabled></textarea>
             <p></p>
             <button class="btn btn-primary" id="bt1">برای کپی کلیک کنید</button>
         </div>
+         -->
+<!--         <div style="margin-top: 100px;">
+            <h1 style="text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"></h1> -->
+<!-- <a href="learn.html" class="btn btn-primary" style="width: 40%; margin-top: 30px; margin-bottom: 50px;">صفحه آموزش</a> -->
+<!--             <p></p>
+            <textarea dir="ltr" style="height: 100px; width: 400px;" id="text2" name="" id="" cols="30" rows="10" disabled></textarea>
+            <p></p> -->
+<!--             <button class="btn btn-primary" id="bt2">برای کپی کلیک کنید</button> -->
+<!--             <p style="margin-bottom: 100px;"></p> -->
+<!--         </div> -->
         
-        <div style="margin-top: 100px;">
-            <h1 style="text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">کانفیگ متفاوت برای ایرانسلی ها</h1>
-            <p style="text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;">این کانفیگ با کانفیگ های قبلی متفاوت است و نیاز به اپلیکیشن و روش وارد کرد متفاوتی دارد</p>
-            <p style="text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;">این کانفیگ در ابتدا کمی لگ داره و وقتی اپلیکیشنی رو باز می کنین برای چند ثانیه کمی دیر لود میکنه مطالب رو ولی بعد از چند ثانیه سرعت خیلی بهتری برای شما فراهم میکنه</p>
-            <p style="text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;">لطفا برای استفاده و مطالعه نحوه وارد کردن به صفحه آموزش مراجعه کنید</p>
-            <a href="learn.html" class="btn btn-primary" style="width: 40%; margin-top: 30px; margin-bottom: 50px;">صفحه آموزش</a>
-            <p></p>
-            <textarea dir="ltr" style="height: 100px; width: 400px;" id="text2" name="" id="" cols="30" rows="10" disabled>{
-    "log": {
-       "loglevel": "Warn"
-    },
-    "dns": {
-       "servers": [
-          "8.8.8.8"
-       ],
-       "queryStrategy": "UseIP",
-       "tag": "built-in-DNS"
-    },
-    "inbounds": [
-       {
-          "listen": "127.0.0.1",
-          "port": 10808,
-          "protocol": "socks",
-          "tag": "socks_IN",
-          "settings": {
-             "udp": true
-          },
-          "sniffing": {
-             "enabled": true,
-             "destOverride": [
-                "http",
-                "tls",
-                "quic"
-             ]
-          }
-       },
-       {
-          "listen": "127.0.0.1",
-          "port": 10809,
-          "protocol": "http",
-          "settings": {
-             "allowTransparent": true,
-             "timeout": 300
-          },
-          "sniffing": {
-             "enabled": true,
-             "destOverride": [
-                "http",
-                "tls"
-             ]
-          },
-          "tag": "http_IN"
-       }
-    ],
-    "outbounds": [
-       {
-          "tag": "proxy",
-          "protocol": "vless",
-          "settings": {
-             "vnext": [
-                {
-                   "address": "tti.ss22ss.online", 
-                   "port": 2087, 
-                   "users": [
-                      {
-                         "id": "eaa3f47d-8cba-43a1-a667-367f973d9573",
-                         "encryption": "none"
-                      }
-                   ]
-                }
-             ]
-          },
-          "streamSettings": {
-             "network": "ws",
-             "security": "tls",
-             "tlsSettings": {
-                "allowInsecure": false,
-                "minVersion": "1.3",
-                "fingerprint": "chrome",
-                "serverName": "tti.ss22ss.online"
-             },
-             "wsSettings": {
-                "headers": {
-                   "Host": "tti.ss22ss.online"
-                },
-                "path": "/asgar" 
-             },
-             "sockopt": {
-                "tcpFastOpen": false,
-                "dialerProxy": "frag-out",
-                "tcpKeepAliveIdle": 120,
-                "tcpNoDelay": true
-             }
-          },
-          "mux": {
-             "enabled": true, 
-             "concurrency": 8,
-             "xudpConcurrency": 8,
-             "xudpProxyUDP443": "reject"
-          }
-       },
-       {
-          "tag": "frag-out",
-          "protocol": "freedom",
-          "settings": {
-             "domainStrategy": "UseIP",
-             "fragment": {
-                "packets": "tlshello",
-                "length": "10-20", 
-                "interval": "10-15" 
-             }
-          },
-          "streamSettings": {
-             "sockopt": {
-                "TcpNoDelay": true,
-                "tcpKeepAliveIdle": 120,
-                "domainStrategy": "UseIP"
-             }
-          }
-       },
-       {
-          "protocol": "freedom",
-          "settings": {
-             "domainStrategy": "UseIP"
-          },
-          "streamSettings": {},
-          "tag": "direct"
-       },
-       {
-          "protocol": "blackhole",
-          "settings": {
-             "response": {
-                "type": "none"
-             }
-          },
-          "tag": "block"
-       },
-       {
-          "protocol": "dns",
-          "settings": {
-             "nonIPQuery": "drop"
-          },
-          "proxySettings": {
-             "tag": "proxy"
-          },
-          "tag": "dns-out"
-       }
-    ],
-    "routing": {
-       "domainMatcher": "hybrid",
-       "domainStrategy": "IPIfNonMatch",
-       "rules": [
-          {
-             "inboundTag": [
-                "socks_IN"
-             ],
-             "outboundTag": "dns-out",
-             "port": "53",
-             "type": "field"
-          },
-          {
-             "inboundTag": ["built-in-DNS"],
-             "outboundTag": "proxy",
-             "type": "field"
-          },
-          {
-              "type": "field",
-              "inboundTag": [
-                "api"
-              ],
-              "outboundTag": "api",
-              "enabled": true
-          },
-          {
-              "domain": ["geosite:category-ads-all"],
-              "outboundTag": "block",
-              "type": "field"
-          },
-          {
-              "ip": [
-                  "10.10.34.35",
-                  "10.10.34.36"
-              ],
-              "outboundTag": "block",
-              "type": "field"
-          },
-          {
-              "ip": [
-                  "geoip:private",
-                  "geoip:ir"
-              ],
-              "outboundTag": "direct",
-              "type": "field"
-          },
-          {
-              "domain": [
-                  "geosite:private",
-                  "domain:.ir"
-              ],
-              "outboundTag": "direct",
-              "type": "field"
-          }
-          
-       ]
-    }
- }</textarea>
-            <p></p>
-            <button class="btn btn-primary" id="bt2">برای کپی کلیک کنید</button>
-            <p style="margin-bottom: 100px;"></p>
-        </div>
-        
-    </div>
+<!--     </div>
     
 
     <script src="script.js"></script>
 </body>
 </html>
+ -->
